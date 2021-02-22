@@ -4,10 +4,10 @@
       <img :src="image" alt="" class="image">
     </div>
     <div class="price">
-        {{ price }}
+      {{ price }}
     </div>
     <h4 class="title">
-        {{ title }}
+      {{ title }}
     </h4>
     <button>Добавить в корзину</button>
   </div>

@@ -5,15 +5,22 @@
     </NuxtLink>
     <NuxtLink class="cartButton" to="/cart">
       Корзина <div class="counter">
-        13</div>
+        {{ counter }}
+      </div>
     </NuxtLink>
   </div>
 </template>
 
 <script lang="ts">
+import { mapState } from 'vuex'
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'Header'
+  name: 'Header',
+  computed: {
+    ...mapState({
+      counter: state => state.counter
+    })
+  }
 })
 </script>
 

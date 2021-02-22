@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <h1 class="title">
-        Категория товаров 1:
+      Категория товаров 1:
     </h1>
     <div class="list">
       <CatalogListItem
